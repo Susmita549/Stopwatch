@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: 'roboto mono';
+        background: radial-gradient(rgb(118, 187, 101),rgba(63, 63, 63, 0.329));
+    }
+.label{
+    font-size:50px;
+    line-height: 100px;
+    margin:5px;
+    width:200px;
+    
+}
+table{
+    margin:30px auto;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size:40px;
+}
+td>button{
+    width:100px;
+    padding:8px;
+    border:1px solid #fff;
+    background-color: rgba(0,0,0,0.192);
+    color:#fff;
+    font-size: 20px;
+    border-radius: 5px;
+}
+</style>
+<body>
+    <h1>STOPWATCH</h1>
+    <table cellpadding="5">
+       <tr>
+           <td>
+               <h1 class="label"  id="hr">00</h1>
+               <p>Hours</p>
+           </td>
+           <td>
+               <h1 class="label"  id="min">00</h1>
+               <p>Minutes</p>
+           </td>
+           <td>
+            <h1 class="label"  id="sec">00</h1>
+            <p>Seconds</p>
+        </td> 
+       </tr>
+       <tr>
+           <td>
+               <button onclick="reset()" id="reset">RESET</button>
+            </td>
+            <td>
+                <button onclick="stop()" id="stop">STOP</button>
+             </td>
+             <td>
+                <button onclick="start()" id="start">START</button>
+             </td>
+       </tr>
+    </table>
+</body>
+</html>
+<script src="index.js"></script>
